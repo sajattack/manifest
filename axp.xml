@@ -91,9 +91,8 @@
         <project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="749640c274d54e084505a24fa758bcb5f96a25ef" />
 	<project path="packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="gos" revision="e710a67ed64620fc11f62520cceef4bba64dc2a6" />
 
-        <!-- OpenEUICC (superseeded by prebuilt) -->
-	<!--project path="packages/apps/OpenEUICC" name="packages_apps_OpenEUICC" remote="axp.os" revision="main" sync-s="true" />-->
-	<!--project path="prebuilts/openeuicc-deps" name="PeterCxy/android_prebuilts_openeuicc-deps" remote="angry" revision="master" sync-s="true" />-->
+	<!-- cherrypicker patch tool -->
+    	<project path="external/cherrypicker" name="aol-aosip/android_vendor_unconv" remote="github" revision="master" />
 <!-- END OF ADDITIONAL REPOS -->
 
 <!-- START OF AXP.OS REPOS -->
