@@ -18,19 +18,19 @@
 	
        <remote name="los" 
               fetch="https://github.com/LineageOS"
-              revision="lineage-20" />
+              revision="lineage-21" />
 	
        <remote name="gos" 
               fetch="https://github.com/GrapheneOS"
-              revision="13" />
+              revision="14" />
 	
        <remote name="muppets" 
               fetch="https://github.com/TheMuppets"
-              revision="lineage-20" />
+              revision="lineage-21" />
 
 	<remote name="gitlabmuppets" 
               fetch="https://gitlab.com/the-muppets"
-              revision="lineage-20" />
+              revision="lineage-21" />
   
         <!-- FIRMWARE related repo, not shared public and even not on github bc they want money for LFS  -->
         <remote name="axp.os-private" 
@@ -109,9 +109,6 @@
         <!-- WireGuard VPN -->
         <project remote="zx2c4" name="wireguard-linux-compat" path="kernel/wireguard-linux-compat" sync-s="true" />
 	
-	<!-- temp until hopefully accepted upstream -->
-	<remove-project path="packages/apps/Seedvault" name="LineageOS/android_packages_apps_Seedvault" />
-	<project path="packages/apps/Seedvault" name="android_packages_apps_Seedvault" remote="axp.os" />
 
 	<!-- "non-existent" divestOS - only repos.
 	     the folders get created and filled on-the-fly during build by the divest scripts.
@@ -146,29 +143,29 @@
         <project path="vendor/oneplus/msm8998-common" name="proprietary_vendor_oneplus_msm8998-common" remote="muppets" />
 
         <!-- oneplus sdm845 - common -->
-        <project path="device/oneplus/sdm845-common" name="android_device_oneplus_sdm845-common" remote="axp.os" />
+        <project path="device/oneplus/sdm845-common" name="android_device_oneplus_sdm845-common" remote="los" />
         <project path="vendor/oneplus/sdm845-common" name="proprietary_vendor_oneplus_sdm845-common" remote="muppets" />
-        <project path="kernel/oneplus/sdm845" name="android_kernel_oneplus_sdm845" remote="axp.os_kernel" />
+        <project path="kernel/oneplus/sdm845" name="android_kernel_oneplus_sdm845" remote="los" />
 
         <!-- oneplus sm8150 - common -->
-        <project path="device/oneplus/sm8150-common" name="android_device_oneplus_sm8150-common" remote="axp.os" />
-        <project path="kernel/oneplus/sm8150" name="android_kernel_oneplus_sm8150" remote="axp.os_kernel" />
+        <project path="device/oneplus/sm8150-common" name="android_device_oneplus_sm8150-common" remote="los" />
+        <project path="kernel/oneplus/sm8150" name="android_kernel_oneplus_sm8150" remote="los" />
         <project path="vendor/oneplus/sm8150-common" name="proprietary_vendor_oneplus_sm8150-common" remote="axp.os-private" />
 
 	<!-- google - common -->
-	<project path="device/google/gs101" name="android_device_google_gs101" remote="axp.os" />
-	<project path="device/google/gs201" name="android_device_google_gs201" remote="axp.os" />
-	<project path="kernel/google/msm-4.14" name="android_kernel_google_msm-4.14" remote="axp.os_kernel" />
+	<project path="device/google/gs101" name="android_device_google_gs101" remote="los" />
+	<project path="device/google/gs201" name="android_device_google_gs201" remote="los" />
+	<project path="kernel/google/msm-4.14" name="android_kernel_google_msm-4.14" remote="los" />
 	<!--project path="kernel/google/gs101/private/gs-google" name="android_kernel_google_gs101" remote="axp.os_kernel" />-->
-	<project path="kernel/google/gs201/private/gs-google" name="android_kernel_google_gs201" remote="axp.os_kernel" />
+	<project path="kernel/google/gs201/private/gs-google" name="android_kernel_google_gs201" remote="los" />
 
 	<!-- samsung - common -->
-	<project path="device/samsung/sm7125-common" name="android_device_samsung_sm7125-common" remote="axp.os" />
+	<project path="device/samsung/sm7125-common" name="android_device_samsung_sm7125-common" remote="los" />
 	<project path="kernel/samsung/sm7125" name="android_kernel_samsung_sm7125" remote="los" />
 	
 	<!-- sony - common -->
 	<project path="kernel/sony/sdm845" name="android_kernel_sony_sdm845" remote="los" />
-	<project path="device/sony/tama-common" name="android_device_sony_tama-common" remote="axp.os" />
+	<project path="device/sony/tama-common" name="android_device_sony_tama-common" remote="los" />
         <project path="vendor/sony/tama-common" name="proprietary_vendor_sony_tama-common" remote="muppets" />
 
 	<!--
@@ -178,7 +175,7 @@
 	-->
 	
 	<!-- Google Pixel 4a (sunfish) -->
-	<project path="device/google/sunfish" name="android_device_google_sunfish" remote="axp.os" />
+	<project path="device/google/sunfish" name="android_device_google_sunfish" remote="los" />
 	<project path="vendor/google/sunfish" name="proprietary_vendor_google_sunfish" remote="muppets" />
 	<!-- uses google - common msm-4.14 kernel (see above) -->
 
@@ -219,8 +216,8 @@
 	<!-- uses oneplus sdm845 - common kernel + common device (see above) -->
 
         <!-- OnePlus 7T Pro (hotdog) -->
-        <project path="device/oneplus/hotdog" name="android_device_oneplus_hotdog" remote="axp.os" />
-        <project path="vendor/oneplus/hotdog" name="proprietary_vendor_oneplus_hotdog" remote="axp.os-private" />
+        <project path="device/oneplus/hotdog" name="android_device_oneplus_hotdog" remote="los" />
+        <project path="vendor/oneplus/hotdog" name="proprietary_vendor_oneplus_hotdog" remote="muppets" />
 	<!-- uses oneplus sm8150 - common kernel (see above) -->
 
 	<!-- OnePlus 7T (hotdogb) -->
