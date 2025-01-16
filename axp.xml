@@ -191,18 +191,18 @@
 	
 	<!-- Google Pixel 6a (bluejay) -->
 	<project path="device/google/bluejay" name="android_device_google_bluejay" remote="los" />
-	<project path="vendor/google/bluejay" name="proprietary_vendor_google_bluejay" remote="gitlabmuppets" />
+	<project path="vendor/google/bluejay" name="proprietary_vendor_google_bluejay" remote="muppets" />
 	<!-- uses google gs101 commons + common gs201 kernel (see above) -->
 
 	<!-- Google Pixel 7a (lynx) -->
 	<project path="device/google/lynx" name="android_device_google_lynx" remote="los" />
-	<project path="vendor/google/lynx" name="proprietary_vendor_google_lynx" remote="gitlabmuppets" />
+	<project path="vendor/google/lynx" name="proprietary_vendor_google_lynx" remote="muppets" />
 	<!-- uses google gs201 commons + gs201 common kernel (see above) -->
 	
 	<!-- Google Pixel 7 Pro (cheetah) -->
 	<project path="device/google/cheetah" name="android_device_google_cheetah" remote="los" />
 	<project path="device/google/pantah" name="android_device_google_pantah" remote="los" />
-	<project path="vendor/google/cheetah" name="proprietary_vendor_google_cheetah" remote="gitlabmuppets" />
+	<project path="vendor/google/cheetah" name="proprietary_vendor_google_cheetah" remote="muppets" />
 	<!-- uses google gs201 commons + gs201 common kernel (see above) -->
 
 	<!-- OnePlus 6 (enchilada) -->
